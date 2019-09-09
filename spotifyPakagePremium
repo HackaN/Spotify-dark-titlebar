@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify
+GenericName=Music Player
+Icon=spotify-client
+TryExec=spotify
+Exec=spotify %U
+Terminal=false
+MimeType=x-scheme-handler/spotify;
+Categories=Audio;Music;Player;AudioVideo;
+StartupWMClass=spotify
+Actions=switch-dark-titlebar;
+
+[Desktop Action switch-dark-titlebar]
+Name=Switch Titlebar to Dark Variant
+Exec=xprop -f _GTK_THEME_VARIANT 8u -set _GTK_THEME_VARIANT "dark" -name "Spotify Premium"
